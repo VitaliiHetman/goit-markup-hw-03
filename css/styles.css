@@ -1,5 +1,3 @@
-
-
 :root {
   --navy-blue: #2e2f42;
   --primary-brand: #4d5ae5;
@@ -8,6 +6,28 @@
   --light: #f4f4fd;
   --pressed-state: #404bbf;
 }
+
+html {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3.h4.p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
 .list {
   list-style: none;
 }
@@ -15,14 +35,59 @@
   text-decoration: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 .body {
   font-family: "Roboto", sans-serif;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
   color: var(--text);
   background-color: var(--white-background);
 }
 
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /* =====================================Header==================================== */
+.pg-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.ph-container {
+  display: flex;
+  align-items: center;
+}
+
+.page-nav {
+  display: flex;
+  align-items: center;
+}
+
+.west {
+  margin-right: 76px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.addr {
+  display: flex;
+  align-items: center;
+}
+
 .logo-left {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -41,7 +106,6 @@
   color: var(--navy-blue);
 }
 
-
 .menu-link {
   font-weight: 500;
   font-size: 16px;
@@ -49,16 +113,11 @@
   letter-spacing: 0.02em;
   color: var(--navy-blue);
 }
-/* .menu-item{
-  color: var(--navy-blue);
-} */
+
 .menu-link:active,
 .menu-link:hover,
 .menu-link:focus {
   color: var(--pressed-state);
-}
-
-.page-nav {
 }
 
 .contakt {
@@ -68,6 +127,7 @@
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text);
+  margin-left: auto;
 }
 
 /* ================================Hero============================ */
@@ -84,6 +144,13 @@
 }
 
 .button {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border: 1px;
+  border-radius: 4px;
+  background: #4d5ae5;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -93,14 +160,13 @@
   letter-spacing: 0.04em;
   color: var(--white-background);
   background-color: var(--primary-brand);
-  cursor: pointer;
 }
 
 .button:hover,
 .button:focus {
   background-color: var(--pressed-state);
 }
-/* =========================================section2===================================================== */
+/* =========================================section2 future===================================================== */
 .title-second {
   font-weight: 700;
   font-size: 36px;
@@ -162,12 +228,12 @@
   background-color: var(--light);
   cursor: pointer;
 }
-.title-port{
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--navy-blue)
+.title-port {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
 }
 
 .button-portfolio:hover,

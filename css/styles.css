@@ -64,6 +64,8 @@ button {
 .pg-header {
   padding-top: 24px;
   padding-bottom: 24px;
+  border: 1px solid var(--text-footer);
+  
 }
 
 .ph-container {
@@ -151,6 +153,9 @@ button {
   letter-spacing: 0.02em;
   color: var(--white-background);
   margin-bottom: 48px;
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button {
@@ -184,6 +189,7 @@ button {
   text-transform: capitalize;
   color: var(--navy-blue);
   margin-bottom: 72px;
+
 }
 
 .text-fea {
@@ -242,9 +248,18 @@ button {
   margin: 0;
 }
 /* =====================================Footer=============================== */
+
+
 .background-footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--navy-blue);
 }
+
+
 .logo-right-footer {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -257,6 +272,7 @@ button {
   line-height: calc(24 / 16);
   letter-spacing: 0.02em;
   color: var(--light);
+  max-width: 264px;
 }
 /* ================================Portfolio=========================================== */
 .btn-port{
@@ -266,11 +282,13 @@ button {
   padding: 24px;
   margin-bottom: 72px;
   margin-top: 96px;
-  margin-left: 213px;
-  margin-right: 213px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-
 }
+/* .wrap-btn{
+  justify-content: center;
+} */
 
 .btn{
   display: flex;

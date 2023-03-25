@@ -154,7 +154,7 @@ button {
 }
 
 .button {
-  min-width: 169px;
+  min-width: 168 px;
   padding: 16px 32px;
   border: 1px;
   border-radius: 4px;
@@ -263,14 +263,18 @@ button {
   display:flex;
   align-items: center; 
   gap: 24px;
-  margin-bottom: 96px;
+  padding: 24px;
+  margin-bottom: 72px;
+  margin-top: 96px;
+  margin-left: 213px;
+  margin-right: 213px;
   text-align: center;
+
 }
 
 .btn{
-  display:flex;
-  min-width: 116px;
-  padding:12px 24px ;
+  display: flex;
+  padding: 12px 24px ;
   border: 1px;
   border-radius: 4px;
   align-items: center; 
@@ -278,8 +282,15 @@ button {
 
 .team-card-port{
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
+  
 } 
+
+.card-port{
+  padding: 32px 16px;
+  border: 1px solid var(--text-footer);
+  border-top: 0; }
 
 .button-portfolio {
   font-family: "Roboto", sans-serif;
